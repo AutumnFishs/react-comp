@@ -10,9 +10,5 @@ export default defineConfig({
   base: projectName ? `/${projectName}/` : "/", //在git上部署时，需要设置base，在vercel上部署时设置为/即可,
   build: {
     outDir: "dist",
-    assetsDir: "static",
-    rollupOptions: {
-      input: "index.html",
-    },
   },
 });
